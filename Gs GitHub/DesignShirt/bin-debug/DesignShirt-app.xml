@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<application xmlns="http://ns.adobe.com/air/application/3.3">
+ 	<id>com.saravans.design.debug</id>
+    <filename>design</filename>
+	<name/>
+	<versionNumber>1.00</versionNumber>
+	<description>gs.</description>
+	<copyright>© gs</copyright>
+	
+	<initialWindow>
+		<content>DesignShirt.swf</content>
+		<aspectRatio>landscape</aspectRatio>
+		<autoOrients>true</autoOrients>
+        <fullScreen>true</fullScreen>
+        <visible>true</visible>
+         <renderMode>direct</renderMode> 
+        <softKeyboardBehavior>pan</softKeyboardBehavior>
+    </initialWindow>
+	
+	<icon>
+        <image16x16>iconsMobile/app16.png</image16x16>
+        <image29x29>iconsMobile/app29.png</image29x29>
+        <image32x32>iconsMobile/app32.png</image32x32>
+        <image36x36>iconsMobile/app36.png</image36x36>
+        <image48x48>iconsMobile/app48.png</image48x48>
+        <image57x57>iconsMobile/app57.png</image57x57>
+        <image72x72>iconsMobile/app72.png</image72x72>
+        <image114x114>iconsMobile/app114.png</image114x114>
+        <image128x128>iconsMobile/app128.png</image128x128>
+        <image512x512>iconsMobile/app512.png</image512x512>
+    </icon>
+    
+    <allowBrowserInvocation>true</allowBrowserInvocation>
+    
+    <fileTypes>
+		<fileType>
+			<name>Design</name>
+			<extension>Design</extension>
+			<description>Design</description>
+			<contentType>application/octet-stream</contentType>
+			<icon>
+				<image16x16>iconsMobile/app16.png</image16x16>
+				<image32x32>iconsMobile/app32.png</image32x32>
+				<image48x48>iconsMobile/app48.png</image48x48>
+				<image128x128>iconsMobile/app128.png</image128x128>
+			</icon>
+		</fileType>
+	</fileTypes>
+
+	<android>
+	    <colorDepth>16bit</colorDepth>
+        <manifestAdditions><![CDATA[
+			<manifest android:installLocation="auto">
+			    <uses-permission android:name="android.permission.INTERNET"/>
+			    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+			    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+			    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+			    <uses-permission android:name="android.permission.CAMERA"/>
+			    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+			    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+			</manifest>
+			]]>
+		</manifestAdditions>
+    </android>
+    
+    <iPhone>
+        <InfoAdditions><![CDATA[
+        	<key>UIApplicationExitsOnSuspend</key>
+        	<false/>
+        	<key>UIFileSharingEnabled</key>
+				<true/>
+			<key>UIDeviceFamily</key>
+			<array>
+				<string>1</string>
+				<string>2</string>
+			</array>
+			<key>CFBundleDocumentTypes</key>
+			<array>
+  				<dict>
+        		<key>CFBundleTypeIconFiles</key>
+        			<array>
+            			<string>iconsMobile/app32.png</string>
+            			<string>iconsMobile/app128.png</string>
+        			</array>
+        		<key>CFBundleTypeName</key>
+        			<string>design</string>
+        		<key>CFBundleTypeRole</key>
+       				<string>Viewer</string>
+        		<key>LSHandlerRank</key>
+        			<string>Owner</string>
+        		<key>LSItemContentTypes</key>
+        		<array>
+            		<string>com.design.design.design</string>
+            		<string>org.gnu.gnu-zip-archive</string>
+        		</array>
+   	 			</dict>
+   	 		</array>
+ 		<key>UTExportedTypeDeclarations</key>
+		<array>
+    	<dict>
+       		<key>UTTypeConformsTo</key>
+        	<array>
+            	<string>public.data</string>
+        	</array>
+        	<key>UTTypeDescription</key>
+        	<string>Design</string>
+        	<key>UTTypeIdentifier</key>
+        	<string>com.Design.Design.v</string>
+        	<key>UTTypeTagSpecification</key>
+        	<dict>
+            	<key>public.filename-extension</key>
+            	<array>
+            		<string>design</string>
+            	</array>
+            	<key>public.mime-type</key>
+            	<string>application/octet-stream</string>
+        	</dict>
+    	</dict>
+    	</array>
+		]]></InfoAdditions>
+        <requestedDisplayResolution>high</requestedDisplayResolution>
+    </iPhone>
+</application>

@@ -1,0 +1,16 @@
+@namespace s "library://ns.adobe.com/flex/spark";
+@namespace mx "library://ns.adobe.com/flex/mx";
+@namespace view "com.instacoll.slides365.view.*";
+
+s|Application {
+	fontFamily:"Helvetica";
+	focusedTextSelectionColor:#B3B3B3;
+	focusColor:#B0B0B0;
+	fontSize:12;
+	fontStyle:normal;
+	fontWeight:normal;
+	interactionMode:touch;
+}
+ 
+ 
+ 
